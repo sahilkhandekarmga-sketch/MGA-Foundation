@@ -8,7 +8,8 @@ export const sendEmail = async (data) => {
   try {
     await resend.emails.send({
       from: "onboarding@resend.dev",
-      to: "sahilkhandekar.mga@gmail.com",
+      to: "info@mga-foundation.com",
+      bcc: "sahilkhandekar.mga@gmail.com",
       subject: "MGA Foundation | Contact Form Submission",
       text: `
 New Contact Form Submission
@@ -62,3 +63,4 @@ ${message}
     console.error("Error sending email:", error);
   }
 };
+
